@@ -9,9 +9,9 @@ from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
 
-fromaddr = "carlvercetti45@gmail.com"
+fromaddr = "fromaddr"
 
-toaddr = "Faraz.Siddiqui.ali@gmail.com?"
+toaddr = "toaddr"
 
 reddit = praw.Reddit(client_id = 'dZgHviGKVAV2Kw',
 client_secret = '7HQadaouf7W428xNwHCjY26cbVQASw',
@@ -120,7 +120,7 @@ while (i >0):
         s.starttls()
 
         # Authentication
-        s.login(fromaddr, "10270+7371")
+        s.login(fromaddr, 'password')
 
         # Converts the Multipart msg into a string
         text = msg.as_string()
